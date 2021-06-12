@@ -11,9 +11,8 @@ class AboutUsDetails extends StatefulWidget {
 
 class _AboutUsDetailsState extends State<AboutUsDetails> {
   launchURL(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url);
-    }
+    print("Launcing..... $url");
+    await launch(url);
   }
 
   @override
